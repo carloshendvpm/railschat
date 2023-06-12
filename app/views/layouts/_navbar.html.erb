@@ -1,0 +1,12 @@
+<div class="navbar bg-base-100">
+  <div class="flex-1">
+    <a class="btn btn-ghost normal-case text-xl"> <%= current_user.email%> </a>
+  </div>
+  <div class="flex-none gap-2">
+    <div class="avatar placeholder">
+      <div class="bg-neutral-focus text-neutral-content rounded-full w-12">
+        <span class="text-xl"> <%= current_user.email.first.capitalize %> </span>
+      </div>
+    </div> 
+  </div>
+</div>

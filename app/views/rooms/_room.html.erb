@@ -1,0 +1,10 @@
+<%= link_to room do %>
+<div class="tooltip" data-tip="<%= room.name %>">
+  <div class="avatar placeholder flex items-center gap-2">
+    <div class="bg-neutral-focus text-neutral-content rounded-full w-8">
+      <span class="text-xs"><%= room.name.first.capitalize %></span>
+    </div>
+    <p class="text-center"><%= room.name %></p>
+  </div>
+</div>
+<% end %>

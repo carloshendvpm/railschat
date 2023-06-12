@@ -1,0 +1,17 @@
+<div class="flex ">
+  <div class="container p-4 flex flex-col gap-1 mx-4">
+  <h4>Rooms</h4>
+  <%= turbo_stream_from "rooms" %>
+  <div id="rooms" class="mb-2 flex flex-col gap-1">
+    <%= render @rooms %>
+  </div>
+  <h4> Users </h4>
+  <%= turbo_stream_from "users" %>
+  <div id="users" class="mb-2 flex flex-col gap-1">
+    <%= render @users %>
+  </div>
+
+  <%= render 'layouts/new_room_form'%>
+</div>
+  <p>ASDKASDKS</p>
+</div>

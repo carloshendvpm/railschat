@@ -1,0 +1,10 @@
+<%= link_to user do %>
+<div class="tooltip" data-tip="<%= user.email %>">
+  <div class="avatar placeholder flex items-center gap-2">
+    <div class="bg-neutral-focus text-neutral-content rounded-full w-10">
+      <span><%= user.email.first.capitalize %></span>
+    </div>
+    <p class="text-center"><%= user.email %></p>
+  </div>
+</div>
+<% end %>
