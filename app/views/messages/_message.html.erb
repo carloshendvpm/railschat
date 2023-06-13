@@ -1,0 +1,14 @@
+<div class="cont-<%= message.user.id %> relative mt-10 ml-20 mb-10">
+  <div class="msg-<%= message.user.id %> bg-gray-800 text-white rounded-lg p-4 max-w-sm shadow-lg">
+    <% unless message.room.is_private %>
+      <h6 class="name text-gray-400 text-sm italic mb-2"><%= message.user.email %></h6>
+    <% end %>
+    <p class="text-sm leading-snug"><%= message.body %></p>
+    <div class="arrow-down absolute text-gray-800 bottom-0 left-0 mb-6 ml-6">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-8 h-8">
+        <path fill-rule="evenodd" d="M3 7a1 1 0 011.707-.707l5.586 5.586a1 1 0 01-1.414 1.414l-5.586-5.586A1 1 0 013 7z" clip-rule="evenodd" />
+        <path fill-rule="evenodd" d="M7 3a1 1 0 011 1v11a1 1 0 11-2 0V4a1 1 0 011-1z" clip-rule="evenodd" />
+      </svg>
+    </div>
+  </div>
+</div>

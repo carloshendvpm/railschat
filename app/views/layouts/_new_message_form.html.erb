@@ -1,0 +1,8 @@
+<div class="text-center">
+  <%= form_with(model: [@single_room, @message], remote: true, class: 'flex justify-center gap-4 mr-8') do |f| %>
+    <%= f.text_field :body, id: 'chat-text', class: 'textarea textarea-bordered w-1/2', placeholder: 'Digite uma mensagem', autocomplete: 'off' %>
+    <div>
+      <%= f.submit data: { disable_with: false }, class: 'btn ' %>
+    </div>
+  <% end %>
+</div>

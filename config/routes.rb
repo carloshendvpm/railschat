@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :rooms
+  resources :rooms do
+    resources :messages
+  end
   root 'pages#home'
   devise_scope :user do
     get 'users', to: 'devise/sessions#new'
