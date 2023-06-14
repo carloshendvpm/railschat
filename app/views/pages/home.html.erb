@@ -1,11 +1,16 @@
-<h1 class="text-2xl">Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-
-<% if current_user %>
-  <p >Logged in as <%= current_user.email %> </p>
-  <%= link_to "Start chatting", rooms_path %> 
-  <%= link_to "Logout", destroy_user_session_path, method: :delete, data: {  turbo_method: :delete} %>
-<% else %>
-  <%= link_to "Login", new_user_session_path %>
-  <%= link_to "Sign Up", new_user_registration_path %>
-<% end %>
+<div class="flex items-center flex-col justify-center h-screen">
+  <div>
+    <h1 class="text-3xl font-bold">Welcome to the Carlos TurboChat</h1>
+  </div>
+  <div class="text-center">
+    <% if current_user %>
+      <p >Logged in as <%= current_user.email %> </p>
+      <%= link_to "Start chatting", rooms_path %> 
+      <%= link_to "Logout", destroy_user_session_path, method: :delete, data: {  turbo_method: :delete} %>
+    <% else %>
+      <p> <%= link_to "If you already have an account you can login", new_user_session_path, class:'link link-hover' %></p>
+      <p>or</p>
+      <%= link_to "Sign Up", new_user_registration_path %>
+    <% end %> 
+  </div>
+</div>
