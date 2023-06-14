@@ -12,6 +12,20 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <%= javascript_importmap_tags %>
+    <style>
+      ::-webkit-scrollbar {
+        display: none;
+      }
+      <%= ".msg-#{current_user&.id}"%>{
+        background-color: #007bff !important;
+        padding: 10px;
+        width: 100%;
+      }
+      <%= ".cont-#{current_user&.id}"%>{
+        display: flex;
+        justify-content: flex-end;
+      }
+    </style>
   </head>
 
   <body>
