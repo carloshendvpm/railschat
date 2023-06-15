@@ -1,6 +1,6 @@
 # TurboChat Rails
 
-Este é o README da aplicação de chat em grupo desenvolvida com Ruby on Rails. A aplicação utiliza o Turbo Rails para melhorar a experiência do usuário, o Devise para autenticação de usuários e o Tailwind CSS juntamente com o DaisyUI para estilização.
+Aplicação desenvolvida no desafio passaporte Real Seguro Viagem. A aplicação utiliza o Turbo Rails para melhorar a experiência do usuário, o Devise para autenticação de usuários e o Tailwind CSS juntamente com o DaisyUI para estilização.
 
 ## Funcionalidades
 
