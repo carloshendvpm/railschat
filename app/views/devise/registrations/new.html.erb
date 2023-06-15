@@ -1,29 +1,32 @@
-<h2>Sign up</h2>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
+<div class="flex items-center justify-center flex-col h-screen gap-4">
+  <h2 class="text-center text-3xl font-bold">Sign up</h2>
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
 
-  <div class="field">
-    <p><%= f.label :email %></p>
-    <p><%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'input input-bordered w-full max-w-xs' %></p>
-  </div>
+    <div class="field">
+      <p><%= f.label :email, class:'label-text' %></p>
+      <p><%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'input input-bordered input-sm w-full max-w-xs', placeholder:'Type your email' %></p>
+    </div>
 
-  <div class="field">
-    <p><%= f.label :password %></p>
-    <% if @minimum_password_length %>
-      <p><em>(<%= @minimum_password_length %> characters minimum)</em></p>
-    <% end %>
-    <p><%= f.password_field :password, autocomplete: "new-password" %></p>
-  </div>
+    <div class="field">
+      <p><%= f.label :password %></p>
+      <% if @minimum_password_length %>
+        <p class="label-text-alt"><em>(<%= @minimum_password_length %> characters minimum)</em></p>
+      <% end %>
+      <p><%= f.password_field :password, autocomplete: "new-password",  class: 'input input-bordered input-sm w-full max-w-xs', placeholder: 'Type your password' %></p>
+    </div>
 
-  <div class="field">
-    <p><%= f.label :password_confirmation %></p>
-    <p><%= f.password_field :password_confirmation, autocomplete: "new-password" %></p>
-  </div>
+    <div class="field mb-4">
+      <p><%= f.label :password_confirmation, class: 'label-text' %></p>
+      <p><%= f.password_field :password_confirmation, autocomplete: "new-password",  class: 'input input-bordered input-sm w-full max-w-xs', placeholder: 'Confirm your password' %></p>
+    </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
+    <div class="actions">
+      <%= f.submit "Sign up", class: 'btn btn-wide' %>
+    </div>
+  <% end %>
+  <p>Or you can</p>
+  <%= render "devise/shared/links" %>
+</div>
 
-<%= render "devise/shared/links" %>
