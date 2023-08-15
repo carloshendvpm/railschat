@@ -1,59 +1,59 @@
 # TurboChat Rails
 
-Aplicação desenvolvida no desafio passaporte Real Seguro Viagem. A aplicação utiliza o Turbo Rails para melhorar a experiência do usuário, o Devise para autenticação de usuários e o Tailwind CSS juntamente com o DaisyUI para estilização.
+Application developed in the Real Seguro Viagem passport challenge. The application utilizes Turbo and Stimulus to enhance the user experience, Devise for user authentication, and Tailwind CSS along with DaisyUI for styling.
 
-## Funcionalidades
+## Features
 
-A aplicação possui as seguintes funcionalidades:
+The application includes the following features:
 
-- Autenticação de usuários com Devise: os usuários podem se registrar, fazer login e fazer logout na aplicação.
-- Criação e gerenciamento de grupos de chat: os usuários podem criar grupos de chat, adicionar membros aos grupos existentes e gerenciar as configurações dos grupos.
-- Chat em tempo real: os membros dos grupos podem enviar mensagens em tempo real e ver as mensagens dos outros membros atualizadas automaticamente.
-- Estilização com Tailwind CSS e DaisyUI: a interface da aplicação é estilizada usando o Tailwind CSS, um framework de CSS utilitário, com o auxílio do DaisyUI para adicionar componentes pré-estilizados.
+- User authentication with Devise: Users can register, log in, and log out of the application.
+- Creation and management of chat groups: Users can create chat groups, add members to existing groups, and manage group settings.
+- Real-time chat: Group members can send real-time messages and see messages from other members updated automatically.
+- Styling with Tailwind CSS and DaisyUI: The application interface is styled using Tailwind CSS, a utility CSS framework, with the assistance of DaisyUI to add pre-styled components.
 
-## Requisitos do sistema
+## System Requirements
 
-Certifique-se de ter as seguintes dependências instaladas em seu sistema:
+Make sure you have the following dependencies installed on your system:
 
-- Ruby 3.1.3 ou superior
-- Rails 7.0.5 ou superior
-- Banco de dados (como o sqlite)
+- Ruby 3.1.3 or higher
+- Rails 7.0.5 or higher
+- Database (such as sqlite)
 
-## Configuração do ambiente
+## Environment Setup
 
-Siga estas etapas para configurar o ambiente da aplicação:
+Follow these steps to set up the application environment:
 
-1. Clone este repositório para sua máquina local.
-2. Navegue até o diretório da aplicação.
+1. Clone this repository to your local machine.
+2. Navigate to the application directory.
 
 ```bash
 cd railschat
 ```
 
-3. Instale as dependências do Ruby executando o comando:
+3. Install Ruby dependencies by running the command:
 
 ```bash
 bundle install
 ```
 
-4. Crie e migre o banco de dados:
+4. Create and migrate the database:
 
 ```bash
 rails db:create
 rails db:migrate
 ```
 
-6. Inicie o servidor local:
+6. Start the local server:
 
 ```bash
 rails s
 ```
 
-A aplicação estará disponível em `http://localhost:3000`.
+The application will be available at `http://localhost:3000`.
 
-## Uso
+## Usage
 
-1. Acesse a página inicial em seu navegador.
-2. Crie uma conta ou faça login, se já tiver uma conta existente.
-3. Crie um novo grupo de chat ou junte-se a um grupo existente.
-4. No grupo de chat, você pode enviar mensagens e ver as mensagens dos outros membros do grupo.
+1. Access the homepage in your browser.
+2. Create an account or log in if you already have an existing account.
+3. Create a new chat group or join an existing group.
+4. In the chat group, you can send messages and see messages from other group members.
